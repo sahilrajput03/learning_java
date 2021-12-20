@@ -156,6 +156,8 @@ Source of Spring learning: https://spring.io/quickstart
 
 Created project using https://youtu.be/a7-v6PW1458?t=213 . Thanks to this guy!
 
+**Running project:**
+
 To run the project in _watch mode_ run `./mvnw spring-boot:run` only and it watches automatically for changes.
 
 **TIP**: You can simply use `./start-development.sh` to run it too.
