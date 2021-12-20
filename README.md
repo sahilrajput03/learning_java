@@ -6,6 +6,137 @@
 
 ---
 
+## good friend - constructor
+
+Note that the constructor name must match the class name, and it cannot have a return type (like void).
+
+Also note that the constructor is called when the object is created.
+
+All classes have constructors by default: if you do not create a class constructor yourself, Java creates one for you. However, then you are not able to set initial values for object attributes.
+
+```java
+// Create a Main class
+public class Main {
+  int x;  // Create a class attribute
+
+  // Create a class constructor for the Main class
+  public Main() {
+    x = 5;  // Set the initial value for the class attribute x
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main(); // Create an object of class Main (This will call the constructor)
+    System.out.println(myObj.x); // Print the value of x
+  }
+}
+
+// Outputs 5
+```
+
+## Making use of variables of class members
+
+```java
+// Modify Attributes
+public class Main {
+  int x;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 40;
+    System.out.println(myObj.x);
+  }
+}
+```
+
+- If you create multiple objects of one class, you can change the attribute values in one object, without affecting the attribute values in the other:
+
+```java
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();  // Object 1
+    Main myObj2 = new Main();  // Object 2
+    myObj2.x = 25;
+    System.out.println(myObj1.x);  // Outputs 5
+    System.out.println(myObj2.x);  // Outputs 25
+  }
+}
+```
+
+## Making objects of a class
+
+src: https://www.w3schools.com/java/java_classes.asp
+
+(^^ do read if you wanna dig inside dust..)
+
+**FYI** :In the end of above source link(w3school) you'll learn how difference files can access eachother's class members to use them. Yikes! (similar to modules in nodejs but java sucks!)
+
+```java
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+```
+
+## Java convention ?
+
+Remember from the Java Syntax chapter that a class should always start with an uppercase first letter, and that the name of the java file should match the class name.
+
+## Loading code from another file in java
+
+Src: https://stackoverflow.com/a/43350661/10012446
+
+Take a look:
+
+• Non-static method:
+
+```java
+// B.java
+
+class B {
+   public void myMethod() {
+     // do stuff
+   }
+}
+
+
+// A.java
+
+class A {
+    public void anotherMethod()
+    {
+         B b=new B();
+         b.myMethod();        // calling B class's method
+    }
+}
+```
+
+• STATIC method:
+
+```java
+// B.java
+
+class B {
+   public static void myMethod() {
+     // do stuff
+   }
+}
+
+
+// A.java
+class A {
+    public void anotherMethod()
+    {
+         B.myMethod();        // calling B class's method
+    }
+}
+```
+
 ## recursion practise in java
 
 ```java

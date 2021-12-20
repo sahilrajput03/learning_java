@@ -52,6 +52,12 @@ public class DemoApplication {
 		return obj.toString();
 
 	}
+
+	@GetMapping("/simplicity")
+	public String simplicity(){
+		String goodUser = UserController.goodUser();
+		return goodUser + "Siplicity is the best city!";
+	}
 	
 	// This doesn't work IDK why..!
 	// @GetMapping("/error")
