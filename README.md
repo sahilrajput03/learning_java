@@ -55,11 +55,13 @@ int myInt = (int) myDouble; // Manual casting: double to int
 
 Src: https://www.w3schools.com/java/java_variables.asp
 
+```txt
 String - stores text, such as "Hello". String values are surrounded by double quotes
 int - stores integers (whole numbers), without decimals, such as 123 or -123
 float - stores floating point numbers, with decimals, such as 19.99 or -19.99
 char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
 boolean - stores values with two states: true or false
+```
 
 **Syntax**:
 
@@ -86,6 +88,7 @@ A primitive data type specifies the size and type of variable values, and it has
 
 There are eight primitive data types in Java:
 
+```txt
 Data Type Size Description
 byte 1 byte Stores whole numbers from -128 to 127
 short 2 bytes Stores whole numbers from -32,768 to 32,767
@@ -95,6 +98,7 @@ float 4 bytes Stores fractional numbers. Sufficient for storing 6 to 7 decimal d
 double 8 bytes Stores fractional numbers. Sufficient for storing 15 decimal digits
 boolean 1 bit Stores true or false values
 char 2 bytes Stores a single character/letter or ASCII values
+```
 
 #### Final Variables/ Constants
 
