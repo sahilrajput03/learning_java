@@ -1,8 +1,8 @@
 # Rockstart - Java
 
-Contents:
+## Contents:
 
-[Jump to hot reloading topic](#hot-reloading-in-java)
+**[Jump to hot reloading topic](#hot-reloading-in-java)**
 
 ---
 
