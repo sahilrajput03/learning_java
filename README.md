@@ -1,5 +1,11 @@
 # Rockstart - Java
 
+Contents:
+
+[Jump to hot reloading topic](#hot-reloading-in-java)
+
+---
+
 ## String methods:
 
 ```java
