@@ -6,6 +6,136 @@
 
 ---
 
+## Switch
+
+```java
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+  // Run if there is no case match:
+    // code block
+}
+
+// The break keyword:
+// When Java reaches a break keyword, it breaks out of the switch block.
+
+// This will stop the execution of more code and case testing inside the block.
+
+// When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+```
+
+## Two dimentional array
+
+```java
+int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+int x = myNumbers[1][2];
+System.out.println(x); // Outputs 7
+```
+
+## arrays in java
+
+```
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+System.out.println(cars[0]);
+// Outputs Volvo
+
+System.out.println(cars.length);
+// Outputs 4
+```
+
+## break/continue
+
+src: https://www.w3schools.com/java/java_break.asp
+Java Break
+You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch statement.
+
+The break statement can also be used to jump out of a loop.
+
+Java Continue
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+## for each loop
+
+There is also a "for-each" loop, which is used exclusively to loop through elements in an array:
+
+```java
+for (type variableName : arrayName) {
+  // code block to be executed
+}
+
+// for e.g.,
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+for (String i : cars) {
+  System.out.println(i);
+}
+```
+
+## For loop
+
+```java
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+```
+
+## Ternary operator in java
+
+```java
+// Syntax:
+// variable = (condition) ? expressionTrue :  expressionFalse;
+
+int time = 20;
+if (time < 18) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}
+
+// REDUCES TO:
+int time = 20;
+String result = (time < 18) ? "Good day." : "Good evening.";
+System.out.println(result);
+```
+
+## if/else, while, do/while
+
+```java
+while (condition) {
+  // code block to be executed
+}
+
+// do/while loop:
+// This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+do {
+  // code block to be executed
+}
+while (condition);
+
+if (20 > 18) {
+  System.out.println("20 is greater than 18");
+}
+
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+```
+
 ## Modules importing and easeness
 
 ```java
@@ -25,6 +155,13 @@ boolean isJavaFun = true;
 boolean isFishTasty = false;
 System.out.println(isJavaFun);     // Outputs true
 System.out.println(isFishTasty);   // Outputs false
+
+
+System.out.println(10 > 9); // returns true, because 10 is higher than 9
+
+
+int x = 10;
+System.out.println(x == 10); // returns true, because the value of x is equal to 10
 ```
 
 ## Math functions:
