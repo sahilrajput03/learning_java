@@ -2,7 +2,6 @@ package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-// import org.json.simple.JSONObject;
 import org.json.JSONObject;
 
 // import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +23,12 @@ public class DemoApplication {
 		return "Welcome to Page 1. Have a nice day!!";// String.format("Welcome to Page 1.")
 	}
 
-	@GetMapping("my_json")
+	@GetMapping("/random")
+	public Double randomNumber() {
+		return Math.random()*100;// String.format("Welcome to Page 1.")
+	}
+
+	@GetMapping("/my_json")
 	public String my_json() {
 		JSONObject obj = new JSONObject();
 
@@ -32,7 +36,10 @@ public class DemoApplication {
 		obj.put("num", 100);
 		obj.put("balance", 1000.21);
 		obj.put("is_vip", true);
-		System.out.print(obj);
+
+		System.out.printf("We're sending data: %s \n", obj.toString());
+		System.out.printf("We're sending data(pretty-2): %s \n", obj.toString(2));
+		// Here 2 value in toString method is the indentation level i.e., 2 spaces.
 
 		return obj.toString();
 

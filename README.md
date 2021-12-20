@@ -6,6 +6,41 @@
 
 ---
 
+## Modules importing and easeness
+
+```java
+// import org.springframework.web.bind.annotation.GetMapping;
+// import org.springframework.web.bind.annotation.RequestParam;
+// import org.springframework.web.bind.annotation.RestController;
+
+// So instead of above lines we can do like this:
+import org.springframework.web.bind.annotation.*;
+// src: This line is a substitution for using multiple entities. Src: https://stackoverflow.com/a/39382541/10012446
+```
+
+## Booleans
+
+```java
+boolean isJavaFun = true;
+boolean isFishTasty = false;
+System.out.println(isJavaFun);     // Outputs true
+System.out.println(isFishTasty);   // Outputs false
+```
+
+## Math functions:
+
+```java
+Math.max(5, 10);// to find the highest value of x and y
+Math.min(5, 10);// to find the lowest value of x and y:
+Math.sqrt(x); // square root.
+Math.abs(x); // method returns the absolute (positive) value of x i.e., -2 => 2 and 2 => 2
+Math.random(); // returns a random number between 0.0 (inclusive), and 1.0 (exclusive):
+
+// want a random number between 0 and 100, you can use the following formula:
+int randomNum = (int)(Math.random() * 101);  // 0 to 100
+// Complete reference of Math: https://www.w3schools.com/java/java_ref_math.asp
+```
+
 ## String methods:
 
 ```java
@@ -30,6 +65,7 @@ String z = x + y;   // z will be 1020 (a String)
 
 // Closest to template literal in java:
 System.out.printf("This is a template %s %s %s", "for", "an ", "example");
+// NOTE :  ^^^^^^^ this is printf not print or println.
 ```
 
 ## Java operators:
