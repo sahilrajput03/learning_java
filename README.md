@@ -2,7 +2,7 @@
 
 ## Contents:
 
-**_[Jump to hot reloading topic](#hot-reloading-in-java)_**
+- **_[Jump to hot reloading topic](#hot-reloading-in-java)_**
 
 ---
 
