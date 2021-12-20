@@ -38,8 +38,16 @@ public class DemoApplication {
 		obj.put("is_vip", true);
 
 		System.out.printf("We're sending data: %s \n", obj.toString());
-		System.out.printf("We're sending data(pretty-2): %s \n", obj.toString(2));
+		System.out.printf("We're sending data(prettily): %s \n", obj.toString(2));
 		// Here 2 value in toString method is the indentation level i.e., 2 spaces.
+
+		 String obj_type = obj.getClass().getSimpleName();// returns type of anything in string format.
+		//  We should not use == to check for value equality coz its pupose is to check reference equality(i.e., same object). Src: https://stackoverflow.com/a/513839/10012446
+		 System.out.printf("Type of 'obj' is JSONObject: %s\n",obj_type.equals("JSONObject"));
+
+		 String a = "Light is invisible.";
+		 String type_a = a.getClass().getSimpleName();
+		 System.out.printf("Type of 'a' is string: %s\n",type_a.equals("String"));
 
 		return obj.toString();
 

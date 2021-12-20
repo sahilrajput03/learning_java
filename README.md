@@ -151,6 +151,13 @@ myNum = 20; // will generate an error: cannot assign a value to a final variable
 
 1. Add below code to your pom.xml file:
 
+Docs (what I found): https://stleary.github.io/JSON-java/org/json/JSONObject.html
+Docs @ android: https://developer.android.com/reference/org/json/JSONObject
+Docs @ javadoc: https://www.javadoc.io/doc/org.json/json/20170516/org/json/class-use/JSONObject.html
+
+FYI: We can use google's library as well i.e.,
+`import com.google.gson.JsonObject;`
+
 ```txt
 <!-- src: https://stackoverflow.com/a/22876057/10012446 -->
 <dependency>
@@ -163,7 +170,6 @@ myNum = 20; // will generate an error: cannot assign a value to a final variable
 2. Then you can use it like:
 
 ```java
-// src:
 import org.json.JSONObject;
 JSONObject obj = new JSONObject();
 
