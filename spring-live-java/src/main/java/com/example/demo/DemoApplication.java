@@ -2,21 +2,27 @@ package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.json.JSONObject;
+import org.json.JSONObject;// json utility.
 
+import org.springframework.web.bind.annotation.*; // This line is a substitution for using multiple entities like below. Src: https://stackoverflow.com/a/39382541/10012446
 // import org.springframework.web.bind.annotation.GetMapping;
 // import org.springframework.web.bind.annotation.RequestParam;
 // import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.*; // This line is a substitution for using multiple entities. Src: https://stackoverflow.com/a/39382541/10012446
 
 @SpringBootApplication
 @RestController
 public class DemoApplication {
+	// Addeing log function using log4j.
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+
+	@GetMapping("/")
+	public String homePage() {
+		return "Welcome to Home Page :)";
+	}
 
 	@GetMapping("/page1")
 	public String page1() {
